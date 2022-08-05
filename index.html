@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./dist/output.css" rel="stylesheet">    
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <main>
+    <header>
+        <nav class="bg-white h-[100px] p-4 flex items-center justify-between fixed w-full left-0 top-0 z-50">
+            <img src="../img/logo.png" class="h-[60px]" alt="logo">
+            <ul class="hidden items-center space-x-10 font-semibold text-2xl p-3 mx-20 lg:inline-flex">
+                <li><a class="lg:!hidden text-black no-underline capitalize hover:underline hover:!text-red-500" href="">Home</a></li>
+                <li><a class="lg:!hidden text-black no-underline capitalize hover:underline hover:!text-red-500" href="#product">Products</a></li>
+                <li><a class="lg:!hidden text-black no-underline capitalize hover:underline hover:!text-red-500" href="#about">about us</a></li>
+                <li><a class="lg:!hidden text-black no-underline capitalize hover:underline hover:!text-red-500" href="#contact">Contact us</a></li>
+
+            </ul>
+            <div class="inline-flex lg:hidden">
+            <i class="fas fa-bars flex  cursor-pointer text-3xl"></i>
+
+            </div>
+
+        </nav>
+    </header>
+    <!-- carousel -->
+    <section class="!mt-20 sm:mt-0">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner w-full  sm:h-[500px]">
+    <div class="carousel-item active">
+      <img src="../img/slide1.jpg " class="d-block w-100"  alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/slide2.jpg" class="d-block w-100 "  alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/slide3.jpg" class="d-block w-100 "  alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/slide4.jpg" class="d-block w-100 "  alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/slide5.jpg" class="d-block w-100 "  alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </section>
+
+    <!-- product -->
+    <section id="product" class="bg-[#63EED3] p-3 ">
+        <h3 class="text-2xl sm:text-5xl font-bold text-center uppercase text-white">top products</h3>
+        <div class="flex items-center justify-center flex-wrap sm:px-20 m-4">
+        <article class="hover:scale-105 duration-75 ease-in-out cursor-pointer w-full sm:w-[320px] flex-col my-3 sm:m-3  items-center justify-center bg-gray-50 sm:h-[448px] border-yellow-500 border-4  shadow-xl rounded">
+        <img src="../img/22cl.jpg" class="h-[70%] object-contain p-4 w-full " alt="">
+        <div class="bg-red-600 rounded-full absolute ml-52 z-30 text-white w-max p-2 f items-center justify-center -mt-20 hidden md:inline-flex"> 
+            <i class="fa-solid fa-arrow-right text-2xl"></i>
+        </div>
+   <div>
+          <p class="text-yellow-700 text-center font-bold sm:text-2xl">Bottled Yoghurt 22cl</p>
+          <p class="text-red-600 text-center font-bold text-xl pb-3">&#8358;200</p>
+        </div>
+        </article>
+        <article class="hover:scale-105 duration-75 ease-in-out cursor-pointer w-full sm:w-[320px] flex-col my-3 sm:m-3  items-center justify-center bg-gray-50 sm:h-[448px] border-yellow-500 border-4  shadow-xl rounded">
+        <img src="../img/75cl.jpg" class="h-[70%] object-contain p-4 w-full " alt="">
+         <div class="bg-red-600 rounded-full absolute ml-52 z-30 text-white w-max p-2 f items-center justify-center -mt-20 hidden md:inline-flex"> 
+            <i class="fa-solid fa-arrow-right sm:text-2xl"></i>
+        </div>
+    <div>
+          <p class="text-yellow-700 text-center font-bold sm:text-2xl">Bottled Yoghurt 75cl</p>
+          <p class="text-red-600 text-center font-bold text-xl pb-3">&#8358;700</p>
+        </div>
+        </article>
+        <article class="hover:scale-105 duration-75 ease-in-out cursor-pointer w-full sm:w-[320px] flex-col my-3 sm:m-3  items-center justify-center bg-gray-50 sm:h-[448px] border-yellow-500 border-4  shadow-xl rounded">
+        <img src="../img/50cl.jpg" class="h-[70%] object-contain p-4 w-full " alt="">
+         <div class="bg-red-600 rounded-full absolute ml-52 z-30 text-white w-max p-2 f items-center justify-center -mt-20 hidden md:inline-flex"> 
+            <i class="fa-solid fa-arrow-right sm:text-2xl"></i>
+        </div>
+  <div>
+          <p class="text-yellow-700 text-center font-bold sm:text-2xl">Unsweetened Bottled Yoghurt 50cl</p>
+          <p class="text-red-600 text-center font-bold text-xl pb-3">&#8358;400</p>
+        </div>
+        </article>
+        <article class="hover:scale-105 duration-75 ease-in-out cursor-pointer w-full sm:w-[320px] flex-col my-3 sm:m-3  items-center justify-center bg-gray-50 sm:h-[448px] border-yellow-500 border-4  shadow-xl rounded">
+        <img src="../img/75cl.jpg" class="h-[70%] object-contain p-4 w-full " alt="">
+         <div class="bg-red-600 rounded-full absolute ml-52 z-30 text-white w-max p-2 f items-center justify-center -mt-20 hidden md:inline-flex"> 
+            <i class="fa-solid fa-arrow-right sm:text-2xl"></i>
+        </div>
+       <div>
+          <p class="text-yellow-700 text-center font-bold sm:text-2xl">Unsweetened Bottled Yoghurt 75cl</p>
+          <p class="text-red-600 text-center font-bold text-xl pb-3">&#8358;700</p>
+        </div>
+        </article>
+        <article class="hover:scale-105 duration-75 ease-in-out cursor-pointer w-full sm:w-[320px] flex-col my-3 sm:m-3  items-center justify-center bg-gray-50 sm:h-[448px] border-yellow-500 border-4  shadow-xl rounded">
+        <img src="../img/straw50cl.jpg" class="h-[70%] object-contain p-4 w-full " alt="">
+         <div class="bg-red-600 rounded-full absolute ml-52 z-30 text-white w-max p-2 f items-center justify-center -mt-20 hidden md:inline-flex"> 
+            <i class="fa-solid fa-arrow-right sm:text-2xl"></i>
+        </div>
+   <div>
+          <p class="text-yellow-700 text-center font-bold sm:text-2xl">Strawberry Flavoured Bottled Yoghurt 50cl</p>
+          <p class="text-red-600 text-center font-bold text-xl pb-3">&#8358;400</p>
+        </div>
+        </article>
+        <article class="hover:scale-105 duration-75 ease-in-out cursor-pointer w-full sm:w-[320px] flex-col my-3 sm:m-3  items-center justify-center bg-gray-50 sm:h-[448px] border-yellow-500 border-4  shadow-xl rounded">
+        <img src="../img/straw75cl.jpg" class="h-[70%] object-contain p-4 w-full " alt="">
+         <div class="bg-red-600 rounded-full absolute ml-52 z-30 text-white w-max p-2 f items-center justify-center -mt-20 hidden md:inline-flex"> 
+            <i class="fa-solid fa-arrow-right sm:text-2xl"></i>
+        </div>
+     <div>
+          <p class="text-yellow-700 text-center font-bold sm:text-2xl">Strawberry Flavoured Bottled Yoghurt 70cl</p>
+          <p class="text-red-600 text-center font-bold text-xl pb-3">&#8358;700</p>
+        </div>
+        </article>
+        <article class="hover:scale-105 duration-75 ease-in-out cursor-pointer w-full sm:w-[320px] flex-col my-3 sm:m-3  items-center justify-center bg-gray-50 sm:h-[448px] border-yellow-500 border-4  shadow-xl rounded">
+        <img src="../img/pine50cl.jpg" class="h-[70%] object-contain p-4 w-full " alt="">
+         <div class="bg-red-600 rounded-full absolute ml-52 z-30 text-white w-max p-2 f items-center justify-center -mt-20 hidden md:inline-flex"> 
+            <i class="fa-solid fa-arrow-right sm:text-2xl"></i>
+        </div>
+   <div>
+          <p class="text-yellow-700 text-center font-bold sm:text-2xl">Pineapple Flavoured Bottled Yoghurt 50cl</p>
+          <p class="text-red-600 text-center font-bold text-xl pb-3">&#8358;400</p>
+        </div>
+        </article>
+        <article class="hover:scale-105 duration-75 ease-in-out cursor-pointer w-full sm:w-[320px] flex-col my-3 sm:m-3  items-center justify-center bg-gray-50 sm:h-[448px] border-yellow-500 border-4  shadow-xl rounded">
+        <img src="../img/greek50.jpg" class="h-[70%] object-contain p-4 w-full " alt="">
+         <div class="bg-red-600 rounded-full absolute ml-52 z-30 text-white w-max p-2 f items-center justify-center -mt-20 hidden md:inline-flex"> 
+            <i class="fa-solid fa-arrow-right sm:text-2xl"></i>
+        </div>
+      <div>
+          <p class="text-yellow-700 text-center font-bold sm:text-2xl">Greek Yoghurt (vanilla & Unsweetened) 50cl</p>
+          <p class="text-red-600 text-center font-bold text-xl pb-3">&#8358;1600</p>
+        </div>
+        </article>
+        <article class="hover:scale-105 duration-75 ease-in-out cursor-pointer w-full sm:w-[320px] flex-col my-3 sm:m-3  items-center justify-center bg-gray-50 sm:h-[448px] border-yellow-500 border-4  shadow-xl rounded">
+        <img src="../img/greek35.jpg" class="h-[70%] object-contain p-4 w-full " alt="">
+         <div class="bg-red-600 rounded-full absolute ml-52 z-30 text-white w-max p-2 f items-center justify-center -mt-20 hidden md:inline-flex"> 
+            <i class="fa-solid fa-arrow-right sm:text-2xl"></i>
+        </div>
+       <div>
+          <p class="text-yellow-700 text-center font-bold sm:text-2xl">Greek Yoghurt (vanilla & Unsweetened) 35cl</p>
+          <p class="text-red-600 text-center font-bold text-xl pb-3">&#8358;1400</p>
+        </div>
+        </article>
+        </div>
+    </section>
+    <!-- advert -->
+            
+<section id="about">
+  <aside class="bg-gray-100 py-4 sm:p-10 h-max ">
+    <div class="px-10 lg:flex lg:align-center lg:justify-evenly ">
+    <div class="pt-20 px-3 "><img src="../img/all.jpg" class="w-full"  alt=""></div>
+    <div>
+      <div>
+        <h2 class="text-red-600 font-bold text-3xl text-center pb-1 pt-10 lg:pt-20">About Us</h2>
+        <h1 class="text-center text-gray-800 text-2xl font-semibold pb-2"> Cedar D' Vine Nigeria Limited</h1></div>
+      <div><p class="text-lg font-semibold text-center text-red-600 px-3 pb-2 lg:px-4">Cedar D' Vine Nigeria Limited is Nigeria's leading manufacturers of Sweetened and Unsweetened Yoghurt made with high quality ingredients.</p></div>
+      <div>
+        <p class=" font-light text-center px-2">We started operation in 2005 as an enterprise and later upgraded to a limited liability company in the year 2008. Our desire to make Yogurt more memorable and appealing to all our customers made us create Cedaa Yoghurt in various sizes and flavours.</p>
+
+        <p class=" font-light text-center px-2">Our Vanilla, Strawberry, Pineapple flavours give a wide range of unique options for the customer. Taking it further, our product sizes from our biggie, to our on-the-go 22cl lunch pack smallie can suit any gathering, or need.</p>
+        
+        <p class=" font-light text-center px-2 "> Cedaa Yoghurt is registered by National Agency For Food and Drug Administration and Control (NAFDAC) and certified by Standards Organization of Nigeria (SON). You can purchase our products online and in a large number of retails stores across Nigeria.</p>
+      </div>
+    </div>
+  </div>
+  </aside>
+</section>
+    <!-- mission -->
+      <section class="lg:flex mb-10 lg:items-start lg:justify-evenly mt-20 sm:px-20">
+    <div class="lg:w-96 lg:flex items-center justify-center  flex-col ">
+      <p class="text-red-600 text-3xl font-semibold  text-center">VISION</p>
+      <P class=" text-xl pt-2 px-4">To become a household name in Nigeria and the African sub-region through quality dairy and beverage products.</P>
+    </div>
+    <div class="lg:w-96 lg:flex items-center justify-center  flex-col">
+      <p class="text-red-600 text-3xl font-semibold  text-center">MISSION</p>
+      <P class=" text-xl px-4 mb-10">We exist to provide nutritional value to our customers across the African sub-region through production of quality beverage products, by adhering to good manufacturing practices, delivering quality rewards to our staff and good returns to our investors in a sustainable environment.</P>
+    </div>
+    <div class="lg:w-96 flex items-center justify-center flex-col">
+      <p class="text-red-600 text-3xl font-semibold ">CORE VALUES</p>
+      <p class=" text-xl">Integrity</p>
+      <p class=" text-xl">Quality</p>
+      <p class=" text-xl">Commitment</p>
+      <p class=" text-xl">Innovation</p>
+      <p class=" text-xl">Tea Spirit</p>
+    </div>
+    </section>
+
+    <!-- footer -->
+    <footer  class="">
+<section class="pt-20" id="contact">
+     <div class="lg:grid lg:grid-cols-2 sm:pl-10">
+    <div class="pl-5 ">
+      <div class="w-40"><img src="../img/logo.png" alt=""></div>
+      <p class="text-red-600 font-bold text-2xl mt-8 mb-5">Want To Reach Us?</p>
+      <p><span class="text-red-600 font-bold">Ota Branch:</span>Cedar D Vine Nig. Ltd, Km 12 Idiroko Rd, Ota, Ogun State, Nigeria. </p>
+      <p class="py-6"><span class="text-red-600 font-bold"> Mowe Branch:</span> Daiman Road, Iyana Redeem Bus Stop, Mowe, Ogun State, Nigeria</p>
+      <p><span class="text-red-600 font-bold"><i class="fa-solid fa-phone"></i></span>+2347040181406</p>
+      <p><span class="text-red-600 font-bold"><i class="fa-solid fa-phone"></i></span>+2349097478089</p>
+      <p><span class="text-red-600 font-bold"><i class="fa-solid fa-envelope"></i></span>
+        info@cedaayogurt.com</p>
+        <p><span class="text-red-600 font-bold"><i class="fa-solid fa-envelope"></i></span>
+          cedayogo@yahoo.com</p>
+          <div class="text-red-600 flex space-x-3 pb-5">
+            <div><i class="fa-brands fa-facebook-f"></i></div>
+            <div><i class="fa-brands fa-twitter"></i></div>
+            <div><i class="fa-brands fa-instagram"></i></div>
+          </div>
+    </div>
+    <div class=" lg:pt-14 px-10 "><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.7179404826807!2d3.1610545140946082!3d6.681821823157963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9ec47350b931%3A0xf92c17826089ed56!2sCedar%20D&#39;%20Vine%20Nig.%20Ltd.!5e0!3m2!1sen!2sng!4v1659630871022!5m2!1sen!2sng" class="-ml-6 sm:ml-0 sm:w-full" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+</section>
+<div class="">
+      <hr class="border-2 border-red-600">
+  <p class="text-center font-bold text-red-600 py-3">Cedaa Yogurt &copy; All Rights Reserved - 2020</p>
+</div>
+    </footer>
+ </main>
+</body>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+ 
+</html>
